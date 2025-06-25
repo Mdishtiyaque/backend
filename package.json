@@ -14,7 +14,9 @@
   "author": "md ishtiyaque",
   "license": "ISC",
   "dependencies": {
+    "@netlify/functions": "^4.1.6",
     "dotenv": "^16.5.0",
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "serverless-http": "^3.2.0"
   }
 }
