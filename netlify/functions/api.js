@@ -23,6 +23,6 @@ app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
 */
-app.use('/.netlify/function/api',router);
+app.use('/.netlify/functions/api',router);
 module.exports.handler=serverless(app);
 

@@ -1,5 +1,6 @@
 [build]
-  function="netlify/function"
+  function="netlify/functions"
+
 [[redirects]]
   force = true
   from = "/api/*"
