@@ -1,10 +1,10 @@
 
-require('dotenv').config()
-const express = require('express')
+import express,{Router} from "express"
+
 const app = express()
-const port = process.env.PORT || 3000
-const serverless=require('serverless-http')
-const router=express.Router();
+const port =  3000
+import serverless from "serverless-http"
+const router=Router();
 
 
 router.get('/', (req, res) => {
@@ -23,6 +23,6 @@ app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
 */
-app.use('/.netlify/functions/api',router);
-module.exports.handler=serverless(app);
+app.use('/api/',router);
+export const handler=serverless(app)
 
