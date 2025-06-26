@@ -1,6 +1,6 @@
 [build]
   function="netlify/functions"
-
+  publish=""
 [[redirects]]
   force = true
   from = "/api/*"
